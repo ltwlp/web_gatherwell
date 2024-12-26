@@ -1,0 +1,32 @@
+{
+  "categories": [
+    {
+      "id": "safety-shoes",
+      "name": "Safety Shoes"
+    },
+    {
+      "id": "reflective-workwear",
+      "name": "Reflective Workwear"
+    },
+    {
+      "id": "workwear",
+      "name": "Workwear"
+    },
+    {
+      "id": "chemical-protective",
+      "name": "Chemical Protective Clothing"
+    },
+    {
+      "id": "accessories",
+      "name": "Accessories"
+    },
+    {
+      "id": "safety-gloves",
+      "name": "Safety Gloves"
+    },
+    {
+      "id": "limited-use",
+      "name": "Limited-use Industrial Protective Clothing"
+    }
+  ]
+}

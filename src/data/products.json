@@ -1,0 +1,15 @@
+{
+  "products": [
+    {
+      "id": "shoe-1",
+      "categoryId": "safety-shoes",
+      "name": "Safety Shoe A",
+      "images": [
+        "/images/placeholder/DT115.jpg",
+        "/images/placeholder/DT116.jpg",
+        "/images/placeholder/DT117.jpg"
+      ],
+      "description": "High-quality safety shoes with steel toe cap"
+    }
+  ]
+}
