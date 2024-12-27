@@ -1,5 +1,4 @@
 // src/app/page.tsx
-import Banner from '@/components/Banner'
 import Categories from '@/components/Categories'
 import About from '@/components/About'
 import banners from '@/data/banners.json'
