@@ -11,7 +11,7 @@ export default function BannerSlider({ banners }: { banners: Banner[] }) {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % banners.length)
-    }, 5000) // 每5秒切换一次
+    }, 5000)
 
     return () => clearInterval(timer)
   }, [banners.length])
@@ -34,15 +34,6 @@ export default function BannerSlider({ banners }: { banners: Banner[] }) {
                 className="object-cover"
                 priority={index === 0}
               />
-              <div className="absolute inset-0 bg-black/30" />
-              <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
-                <h2 className="text-4xl md:text-6xl font-bold mb-4">
-                  {banner.title}
-                </h2>
-                <p className="text-xl md:text-2xl">
-                  {banner.description}
-                </p>
-              </div>
             </div>
           </Link>
         </div>

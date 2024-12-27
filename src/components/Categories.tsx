@@ -5,24 +5,21 @@ import Image from 'next/image'
 const categories = [
   {
     id: 1,
-    name: 'Industrial Equipment',
-    description: 'High-quality industrial machinery and equipment',
-    image: '/images/categories/industrial.svg',
-    slug: 'industrial-equipment'
+    name: 'Limited-use Industrial Protective Clothing',
+    image: '/images/categories/limited-use.png',
+    slug: 'limited-use'
   },
   {
     id: 2,
-    name: 'Precision Tools',
-    description: 'Professional precision tools for various industries',
-    image: '/images/categories/tools.svg',
-    slug: 'precision-tools'
+    name: 'Chemical Protective Clothing',
+    image: '/images/categories/chemical-protective.png',
+    slug: 'chemical-protective'
   },
   {
     id: 3,
-    name: 'Safety Gear',
-    description: 'Complete range of safety equipment',
-    image: '/images/categories/safety.svg',
-    slug: 'safety-gear'
+    name: 'Workwear',
+    image: '/images/categories/workwear.png',
+    slug: 'workwear'
   }
 ]
 
@@ -33,28 +30,24 @@ export default function Categories() {
         <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Hot Categories</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {categories.map((category) => (
-            <div 
+            <div
               key={category.id}
               className="flex flex-col items-center"
             >
               {/* 圆形图片区域 */}
-              <div className="w-48 h-48 rounded-full bg-gray-100 mb-6 relative overflow-hidden">
+              <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 bg-gray-100 mb-6 relative overflow-hidden">
                 <Image
                   src={category.image}
                   alt={category.name}
                   fill
-                  className="object-contain p-8"
+                  className="object-cover rounded-full"  // 添加 rounded-full 使图片变圆
                 />
               </div>
-              
+
               {/* 分类名称 */}
-              <h3 className="text-2xl font-bold text-gray-800 mb-3">{category.name}</h3>
-              
-              {/* 描述文字 */}
-              <p className="text-gray-500 text-center mb-6">{category.description}</p>
-              
+              <h3 className="ttext-2xl font-bold text-gray-800 mb-3 text-center min-h-[4em] line-clamp-2 flex items-center justify-center px-4">{category.name}</h3>
               {/* 按钮 */}
-              <Link 
+              <Link
                 href={`/products/${category.slug}`}
                 className="text-blue-500 hover:text-blue-600 font-medium transition-colors"
               >

@@ -12,59 +12,15 @@
       "description": "Professional grade safety shoes with steel toe cap and anti-slip sole"
     },
     {
-      "id": "shoe-2",
-      "categoryId": "safety-shoes",
-      "name": "ComfortGuard Work Boot",
+      "id": "shoe-gw-s01",
+      "categoryId": "accessories",
+      "name": "GW-S01",
       "images": [
         "/images/placeholder/DT115.jpg",
         "/images/placeholder/DT116.jpg",
         "/images/placeholder/DT117.jpg"
       ],
-      "description": "Comfortable work boots with composite toe and waterproof design"
-    },
-    {
-      "id": "shoe-3",
-      "categoryId": "safety-shoes",
-      "name": "LightFlex Safety Sneaker",
-      "images": [
-        "/images/placeholder/DT115.jpg",
-        "/images/placeholder/DT116.jpg",
-        "/images/placeholder/DT117.jpg"
-      ],
-      "description": "Lightweight safety sneakers with breathable mesh and protective toe cap"
-    },
-    {
-      "id": "shoe-4",
-      "categoryId": "safety-shoes",
-      "name": "DuraTech Industrial Boot",
-      "images": [
-        "/images/placeholder/DT115.jpg",
-        "/images/placeholder/DT116.jpg",
-        "/images/placeholder/DT117.jpg"
-      ],
-      "description": "Heavy-duty industrial boots with oil-resistant sole and ankle protection"
-    },
-    {
-      "id": "shoe-5",
-      "categoryId": "safety-shoes",
-      "name": "ElectroSafe Insulated Boot",
-      "images": [
-        "/images/placeholder/DT115.jpg",
-        "/images/placeholder/DT116.jpg",
-        "/images/placeholder/DT117.jpg"
-      ],
-      "description": "Electrical hazard rated safety boots with insulated protection"
-    },
-    {
-      "id": "shoe-6",
-      "categoryId": "safety-shoes",
-      "name": "AllTerrain Safety Boot",
-      "images": [
-        "/images/placeholder/DT115.jpg",
-        "/images/placeholder/DT116.jpg",
-        "/images/placeholder/DT117.jpg"
-      ],
-      "description": "All-terrain safety boots with enhanced grip and durability"
+      "description": "Upper material: two-layer cowhide (except cow suede)\nSole material: polyurethane solid sole\nToe material: steel toe cap\nShoemaking process: injection molding process\nUpper height: low top\nFunction: anti-smash, anti-puncture, wear-resistant, acid and alkali resistant\nApplication: construction industry, welding industry, machinery manufacturing, petroleum mining, auto repair industry, electronics i"
     }
   ]
 }
