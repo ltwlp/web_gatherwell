@@ -26,7 +26,7 @@ export default async function ProductsPage({ params }: PageProps) {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-        <div className="flex flex-col md:flex-row gap-8 min-h-[calc(100vh-64px)] mt-16">
+        <div className="flex flex-col md:flex-row gap-8 min-h-[calc(100vh-64px)] ">
           <div className="hidden md:block">
             <CategoryNav 
               categories={categories} 

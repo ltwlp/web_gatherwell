@@ -23,3 +23,11 @@ body {
 .text-shadow {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+main {
+  padding-top: 64px; /* 因为导航栏高度是 h-16 (64px) */
+}
+
+/* 如果使用了固定定位的导航栏，确保它有正确的 z-index */
+.navbar {
+  z-index: 1000;
+}

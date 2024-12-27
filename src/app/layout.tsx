@@ -19,15 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* 基础布局结构 */}
       <body className={inter.className}>
-        <div className="min-h-screen flex flex-col">
-          <Navbar />
-          <main className="flex-grow">
-            {children}
-          </main>
-          <Footer />
-        </div>
+        <Navbar />
+        <main className="min-h-screen">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   )

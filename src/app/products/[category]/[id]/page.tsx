@@ -15,7 +15,7 @@ export default async function ProductPage({ params }: PageProps) {
   if (!product) return null
 
   return (
-    <main className="flex-1 pt-16">
+    <main className="flex-1 pt-6">
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ProductImages images={product.images} name={product.name} />

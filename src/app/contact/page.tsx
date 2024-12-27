@@ -10,7 +10,7 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* 顶部横幅 */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-24 mt-20">
+      <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-24 -mt-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-center tracking-tight">
             Contact Us

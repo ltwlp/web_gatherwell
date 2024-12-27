@@ -13,7 +13,7 @@ export default function ProductGrid({
 
   return (
     <div className="flex-1">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-10">
         {products.map((product) => (
           <Link
             key={product.id}

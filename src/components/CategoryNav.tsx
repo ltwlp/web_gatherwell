@@ -12,7 +12,7 @@ export default function CategoryNav({
 }) {
   return (
     <div className="w-[320px]">
-      <div className="pt-20">
+      <div className="pt-10">
         <div className="bg-white/60 backdrop-blur-sm rounded-lg shadow-sm p-6">
           <h2 className="text-2xl font-bold mb-6">Categories</h2>
           <nav className="space-y-2">
