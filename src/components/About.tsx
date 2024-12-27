@@ -28,7 +28,7 @@ export default function About() {
                 GatherWell provides customers with high-quality products by insisting on continuous product research and development and technological innovation. The products comply with GB standards, CE European standards, etc., to provide users with the best protection.
               </p>
               <p>
-                Over the years, GatherWell's products have been exported to more than 30 countries and regions including Europe, Japan, South Korea, Singapore, Thailand, the United States, Canada, and South America, etc. It is deeply loved by users.
+      Over the years, GatherWell&apos;s products have been exported to more than 30 countries and regions including Europe, Japan, South Korea, Singapore, Thailand, the United States, Canada, and South America, etc. It is deeply loved by users.
               </p>
               <p>
                 In the future, we will continue to provide users with better safety protection with our products with excellent quality, professional team, and meticulous service.
