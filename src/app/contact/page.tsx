@@ -16,7 +16,7 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="text-center mt-6 text-lg max-w-2xl mx-auto text-blue-100">
-            We're here to help and answer any questions you might have about our safety protection solutions.
+           We&apos;re here to help and answer any questions you might have about our safety protection solutions.
           </p>
         </div>
       </div>
@@ -27,7 +27,7 @@ export default function ContactPage() {
           <div className="bg-white p-8 rounded-xl shadow-sm">
             <h2 className="text-2xl font-bold mb-8 text-gray-900">Get In Touch</h2>
             <p className="text-gray-500 mb-12 leading-relaxed">
-              Have questions about our products? We'd love to hear from you. Contact us through any of the following channels.
+            Have questions about our products? We&apos;d love to hear from you. Contact us through any of the following channels.
             </p>
 
             <div className="space-y-8">
