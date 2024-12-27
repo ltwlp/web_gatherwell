@@ -4,9 +4,20 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Category } from '@/types'
 
-// 定义产品数据
 const productData: { categories: Category[] } = {
   categories: [
+    {
+      id: 'limited-use',
+      name: 'Limited-use Industrial Protective Clothing',
+    },
+    {
+      id: 'chemical-protective',
+      name: 'Chemical Protective Clothing',
+    },
+    {
+      id: 'workwear',
+      name: 'Workwear',
+    },
     {
       id: 'safety-shoes',
       name: 'Safety Shoes',
@@ -16,24 +27,12 @@ const productData: { categories: Category[] } = {
       name: 'Reflective Workwear',
     },
     {
-      id: 'workwear',
-      name: 'Workwear',
-    },
-    {
-      id: 'chemical-protective',
-      name: 'Chemical Protective Clothing',
-    },
-    {
-      id: 'accessories',
-      name: 'Accessories',
-    },
-    {
       id: 'safety-gloves',
       name: 'Safety Gloves',
     },
     {
-      id: 'limited-use',
-      name: 'Limited-use Industrial Protective Clothing',
+      id: 'accessories',
+      name: 'Accessories',
     },
   ]
 }
@@ -43,52 +42,51 @@ export default function Navbar() {
   const [showProducts, setShowProducts] = useState(false)
   const [showMobileProducts, setShowMobileProducts] = useState(false)
 
-  // 添加关闭菜单的处理函数
   const handleCloseMenu = () => {
     setIsOpen(false)
     setShowMobileProducts(false)
   }
 
   return (
-<nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <Image src="/images/logo-m.jpg" alt="Logo" width={40} height={40} className="object-contain"  />
-          </Link>
+          <div className="flex items-center">
+            <Link href="/" className="flex items-center">
+              <Image src="/images/logo-m.jpg" alt="Logo" width={40} height={40} className="object-contain" />
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-12">
             <Link href="/" className="text-gray-900 hover:text-blue-600">
               Home
             </Link>
-            
+
             {/* Products Dropdown */}
-            <div 
-              className="relative group"
+            <div
+              className="relative"
               onMouseEnter={() => setShowProducts(true)}
               onMouseLeave={() => setShowProducts(false)}
             >
-              <button
-                className="text-gray-900 hover:text-blue-600 py-2"
-              >
+              <button className="text-gray-900 hover:text-blue-600 py-2">
                 Products
               </button>
-              
+
               {/* Dropdown Menu */}
               <div
-                className={`absolute top-full left-0 w-64 bg-white shadow-lg rounded-lg py-2 mt-1 transition-all duration-200 ${
-                  showProducts 
-                    ? 'opacity-100 visible transform translate-y-0' 
-                    : 'opacity-0 invisible transform -translate-y-2'
+                className={`absolute top-full left-1/2 transform -translate-x-1/2 w-80 bg-white shadow-lg rounded-lg py-2 mt-1 transition-all duration-200 ${
+                  showProducts
+                    ? 'opacity-100 visible translate-y-0'
+                    : 'opacity-0 invisible -translate-y-2'
                 }`}
               >
                 {productData.categories.map((category: Category) => (
                   <Link
                     key={category.id}
                     href={`/products/${category.id}`}
-                    className="block px-4 py-2 text-gray-900 hover:bg-gray-50 hover:text-blue-600"
+                    className="block px-4 py-2 text-gray-900 hover:bg-gray-50 hover:text-blue-600 whitespace-normal"
                   >
                     {category.name}
                   </Link>
@@ -136,14 +134,14 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className="block px-3 py-2 text-gray-900 hover:bg-gray-50"
               onClick={handleCloseMenu}
             >
               Home
             </Link>
-            
+
             {/* Mobile Products Menu */}
             <div>
               <button
@@ -167,7 +165,7 @@ export default function Navbar() {
                   />
                 </svg>
               </button>
-              
+
               {/* Mobile Products Submenu */}
               <div
                 className={`transition-all duration-200 ${
@@ -189,8 +187,8 @@ export default function Navbar() {
               </div>
             </div>
 
-            <Link 
-              href="/contact" 
+            <Link
+              href="/contact"
               className="block px-3 py-2 text-gray-900 hover:bg-gray-50"
               onClick={handleCloseMenu}
             >
